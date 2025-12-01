@@ -1,1 +1,33 @@
-https://www.programiz.com/online-compiler/6MSF7Mzt2ngNF
+import java.util.Scanner;
+
+public class index2 {
+
+	public static void main(String[] args) {
+		Scanner l = new Scanner(System.in);
+		
+		int max = 10;
+	    int[] a = new int[max];
+	    int[] b = new int[max];
+	    
+	    for (int i = 0; i < max; i++) {
+	    	System.out.println("Digite o valor #" + (i + 1) + " Do vetor A:");
+	    	a[i] = l.nextInt();
+	    };
+	    for (int i = 0; i < max; i++) {
+	    	System.out.println("Digite o valor #" + (i + 1) + " Do vetor B:");
+	    	b[i] = l.nextInt();
+	    };
+	    System.out.println("Elementos do vetor A e do vetor B: ");
+	    for (int i = 0; i < max; i++) {
+	    	int iA = a[i];
+		    for (int i2 = 0; i2 < max; i2++) {
+		    	if (b[i2] == iA) {
+		    		System.out.println(a[i] + ";");
+		    	};
+		    };
+	    };
+	    
+
+	}
+
+}
